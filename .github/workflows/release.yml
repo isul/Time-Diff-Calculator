@@ -25,12 +25,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build and release with Wails action
-        uses: dAppServer/wails-build-action@v2.2
+      - name: Setup Go
+        uses: actions/setup-go@v5
         with:
           go-version: "1.23"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
           node-version: "20"
-          nsis: false
-          package: false
-          build-name: timediff
-          build-platform: ${{ matrix.platform }}
+
+      - name: Install Wails CLI
+        run: go install github.com/wailsapp/wails/v2/cmd/wails@latest
+
+      - name: Build app
+        run: |
+          wails doctor
+          wails build -platform "${{ matrix.platform }}" -nsis=false -package=false -clean
+
+      - name: Upload assets to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/bin/*
