@@ -1,0 +1,16 @@
+{
+  "format_seconds": "초 단위",
+  "format_milliseconds": "밀리초",
+  "format_mmss": "분:초",
+  "format_hhmmss": "시:분:초",
+  "format_ddhhmmss": "일 시:분:초",
+  "format_full": "전체(밀리초 포함)",
+  "format_custom": "사용자 정의",
+  "unit_second": "초",
+  "unit_minute": "분",
+  "unit_hour": "시간",
+  "unit_day": "일",
+  "err_need_two": "날짜·시간이 두 개 필요합니다.",
+  "warn_empty": "입력이 비어 있습니다.",
+  "ok_ready": "계산할 수 있습니다."
+}

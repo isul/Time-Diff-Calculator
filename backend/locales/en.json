@@ -1,0 +1,20 @@
+{
+  "format_seconds": "Seconds",
+  "format_milliseconds": "Milliseconds",
+  "format_mmss": "mm:ss",
+  "format_hhmmss": "hh:mm:ss",
+  "format_ddhhmmss": "dd hh:mm:ss",
+  "format_full": "Full (with ms)",
+  "format_custom": "Custom",
+  "unit_second": "second",
+  "unit_seconds": "seconds",
+  "unit_minute": "minute",
+  "unit_minutes": "minutes",
+  "unit_hour": "hour",
+  "unit_hours": "hours",
+  "unit_day": "day",
+  "unit_days": "days",
+  "err_need_two": "Two date-times are required.",
+  "warn_empty": "Input is empty.",
+  "ok_ready": "Ready to calculate."
+}

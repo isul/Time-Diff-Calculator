@@ -1,0 +1,10 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "timediff",
+  "outputfilename": "timediff",
+  "wailsjsdir": "./frontend",
+  "author": {
+    "name": "isul",
+    "email": "isul@isulnara.com"
+  }
+}
