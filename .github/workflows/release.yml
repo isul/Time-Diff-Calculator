@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build and upload release assets
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            platform: linux/amd64
+          - os: ubuntu-latest
+            platform: windows/amd64
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build and release with Wails action
+        uses: dAppServer/wails-build-action@v2.2
+        with:
+          go-version: "1.23"
+          node-version: "20"
+          nsis: false
+          package: false
+          build-name: timediff
+          build-platform: ${{ matrix.platform }}
