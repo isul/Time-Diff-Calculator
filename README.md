@@ -17,6 +17,13 @@ Typical uses include checking elapsed time between project milestones, log times
 - View readable outputs in seconds, milliseconds, mm:ss, hh:mm:ss, and day-based formats
 - Save and reuse your preferred output settings for repeated calculations
 
+### Releases (pre-built binaries)
+
+Pre-built executables are attached to each version on the [Releases](https://github.com/isul/Time-Diff-Calculator/releases) page:
+
+- **timediff** — Linux
+- **timediff.exe** — Windows
+
 ### Quick start (sample inputs)
 
 In the **Date-time input** field, paste **one line** with two date-times, as shown below.
@@ -125,6 +132,13 @@ After adding or changing Go methods exposed to the frontend, run one of the foll
 - **Date-time input** 한 칸에 날짜·시간 두 개를 넣어 차이 계산 (앱이 자동으로 두 시점을 인식)
 - 일/시간/분/초 등 읽기 쉬운 형식으로 결과 확인
 - 반복 계산 시 설정값 저장 후 다시 사용
+
+### 릴리스(미리 빌드된 바이너리)
+
+[Releases](https://github.com/isul/Time-Diff-Calculator/releases) 페이지에서 버전별로 빌드된 실행 파일을 내려받을 수 있습니다.
+
+- **timediff** — Linux용
+- **timediff.exe** — Windows용
 
 ### 빠른 사용법 (샘플 데이터)
 
